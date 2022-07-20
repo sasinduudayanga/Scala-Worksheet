@@ -37,9 +37,13 @@ a=a+1
 
 
 //Question 4 (a)
-def salary(WH:Int, OT:Int):Int= (WH*250 + OT*85) -  (WH*250 + OT*85)*12/100
-// WH= working hours
-salary(40,30)
+def normalWH(wHours:Int):Double= 250 * wHours
+def otH(otHours:Int):Double= 85 * otHours
+def income(h1:Int,h2:Int):Double= normalWH(h1) + otH(h2)
+def tax(totIncome:Double):Double= totIncome * 0.12
+def takeHome(h1:Int,h2:Int):Double= income(h1,h2) - tax(income(h1,h2))
+
+takeHome(40,30)
 
 //Question 4 (b)
 def attendees(Tprice:Int):Int= 120+(15-Tprice)/5 *20
