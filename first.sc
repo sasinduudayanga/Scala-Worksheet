@@ -3,7 +3,7 @@ var k,i,j =2
 var m,n=5
 var f=12.0
 var g=4.0
-var c="X"
+var c='X'
 
 //Question 3
 k+12*m
@@ -11,13 +11,14 @@ m/j
 n%j
 m/j*j
 f+10*5+g
+i=i+1; i*n
 
 //
 var a=2
 var b=3
 var c=4
 var d=5
-var k=4.3
+var k=4.3f
 
 b=b-1
 println(b*a + c*d)
